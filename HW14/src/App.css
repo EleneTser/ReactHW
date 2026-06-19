@@ -1,0 +1,32 @@
+.Weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(3, 105, 136);
+}
+
+.cities button {
+  background-color: lightblue;
+  border: 1.5px solid rgb(1, 77, 100);
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(0, 61, 85);
+  margin: 5px;
+  padding: 10px;
+
+}
+
+.cityName {
+  color: rgb(0, 95, 124);
+  text-align: center;
+}
+
+p {
+  color: rgb(0, 139, 105);
+  font-weight: bold;
+  text-align: center;
+}
