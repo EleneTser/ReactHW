@@ -1,0 +1,97 @@
+.AccordionCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; 
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px; 
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.AccordionText {
+    flex: 1;
+}
+
+.AccordionText h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.Image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-19.5%) translateY(-55%);
+    width: 55%;
+    z-index: 2;
+}
+
+.bg {
+    transform: translateX(-11%) translateY(7%); 
+    width: 105%;
+    z-index: 1; 
+}
+
+  .shadow{
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  }
+
+
+@media (max-width: 360px) {    
+.AccordionCard {
+  flex-direction: column;
+  height: auto;
+  margin: 90px auto 0;
+  padding: 16px 14px;
+  border-radius: 14px;
+  gap: 10px;
+  max-width: 88%;
+}
+  .Image {
+    width: 160%;           
+    height: 140px;
+    transform: translateY(27%); 
+    position: relative;
+    flex: none;
+  }
+
+  .mainImg {
+    transform: translateX(-54%) translateY(-118%);
+    left: 50%;
+    width: 60%;
+  }
+
+  .shadow {
+    visibility: visible;
+    transform: translateX(0%) translateY(-53%);
+    width: 290px;
+    z-index: 1;
+  }
+
+  .bg {
+    visibility: hidden;
+  }
+
+  .AccordionText {
+    width: 100%;
+    text-align: center;
+  }
+
+  .AccordionText h1 {
+    margin-bottom: 16px;
+  }
+}
