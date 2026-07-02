@@ -1,0 +1,54 @@
+.directory-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.user-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.user-card{
+  width: 250px;
+  border: 2px solid rgb(39, 93, 117);
+  border-radius: 15px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(230, 249, 255);
+  color: rgb(39, 93, 117);
+}
+
+.directory-title{
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  color: rgb(39, 93, 117);
+}
+
+.search-box{
+  width: 250px;
+  height: 30px;
+  padding-inline: 10px;
+  border-radius: 15px;
+  border: 2px solid rgb(39, 93, 117);
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(245, 251, 253);
+}
+
+.user-name{
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+}
+
+.no-results{
+  font-family: "Montserrat", sans-serif;
+  color: rgb(39, 93, 117);
+  font-size: 20px;
+  font-weight: 700;
+}
+
