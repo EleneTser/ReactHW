@@ -303,18 +303,20 @@ body {
 
 @media (max-width: 450px) {
   body {
+    height: auto;
     min-height: 100vh;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start; 
   }
 
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
     width: 100%;
-    padding: 0 16px;
+    padding: 32px 16px;
+    gap: 20px;
+  }
+
+  .MainText {
+    line-height: 1.3; 
   }
 
   .Card {
