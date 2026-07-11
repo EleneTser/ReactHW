@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-color: #C5E4E7;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+}
+
+.MainText {
+  color: #3D6666;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 10px; 
+
+}
+
+.Card {
+  width: 920px;
+  height: 481px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  display: flex;
+  align-items: flex-start;   
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.LeftInput{
+  font-size: 16px;
+  color: #5E7A7D;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Bill{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.BillInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F3F9FA;
+  width: 379px;
+  height: 48px;
+  border-radius: 5px;
+  padding-inline: 10px;
+  font-size: 24px;
+  color: #00474B;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.BillInput p{
+  color: #9EBBBD;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+.BillInput input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #00474B;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  background-color: transparent;
+  font-family: "Space Mono", monospace;
+}
+
+.BillInput input::placeholder {
+  color: #00474B;
+  opacity: 1;
+}
+
+.BillInput input:focus {
+  border: none;
+  outline: none;
+}
+
+.BillInput:hover {
+  border-color: #26C2AE;
+}
+
+.Tips {
+  width: 379px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.Tips button,
+.Tips input {
+  width: 117px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  border-radius: 5px;
+}
+
+.Tips button{
+  background-color: #00474B;
+  border: none;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.Tips button:hover{
+  background-color: #9FE8DF;
+  color: #00474B;
+}
+
+.Tips button.selected {
+  background-color: #26C2AE;
+  color: #00474B;
+}
+
+.Tips input {
+  border: 2px solid transparent;
+  color: #00474B;
+  text-align: right;
+  background-color: #F3F9FA;
+  transition: border 0.3s ease;
+  outline: none;
+  padding-inline: 10px;
+}
+
+.Tips input::placeholder {
+  color: #547878;
+  opacity: 1;
+}
+
+.Tips input:focus {
+  border-color: #26C2AE;
+  color: #547878;
+}
+
+
+.People{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.PeopleInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F3F9FA;
+  width: 379px;
+  height: 48px;
+  border-radius: 5px;
+  padding-inline: 10px;
+  font-size: 24px;
+  color: #00474B;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.PeopleInput span{
+  color: #9EBBBD;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+.PeopleInput input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #00474B;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  background-color: transparent;
+  font-family: "Space Mono", monospace;
+}
+
+.PeopleInput input::placeholder {
+  color: #00474B;
+  opacity: 1;
+}
+
+.PeopleInput input:focus {
+  border: none;
+  outline: none;
+}
+
+.PeopleInput:hover {
+  border-color: #26C2AE;
+}
+
+
+.PeopleLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ErrorText {
+  color: #E17457;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.PeopleInput.Error {
+  border-color: #E17457;
+}
+
+
+.RightSum {
+  background-color: #00474B;
+  width: 413px;
+  height: 417px;
+  border-radius: 15px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.SumGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 35px; 
+}
+
+.Sum {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.RightStatic h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.RightStatic h4 {
+  margin: 2px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F9D9F;
+}
+
+.Sum p {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #26C2AE;
+  line-height: 1;
+}
+
+.RightSum button {
+  border-radius: 5px;
+  background-color: #26C2AE;
+  color: #00474B;
+  font-family: "Space Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.RightSum button:hover {
+  background-color: #9FE8DF;
+}
+
+.RightSum button:active {
+  background-color: #0D686D;
+}
