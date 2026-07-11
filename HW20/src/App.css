@@ -300,3 +300,76 @@ body {
 .RightSum button:active {
   background-color: #0D686D;
 }
+
+@media (max-width: 450px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .Card {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .LeftInput {
+    width: 100%;
+  }
+
+  .BillInput,
+  .PeopleInput {
+    width: 100%;
+  }
+
+  .Tips {
+    width: 100%;
+  }
+
+  .Tips button,
+  .Tips input {
+    width: calc(50% - 7px); 
+    height: 48px;
+  }
+
+  .RightSum {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;   
+    justify-content: space-between;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .SumGroup {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .Sum {
+    width: 100%;
+  }
+
+  .Sum p {
+    font-size: 32px;
+  }
+}
