@@ -1,0 +1,247 @@
+body{
+    background-color: #070724;
+    margin: 0;
+}
+
+.site-header{
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Antonio", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.75;
+    font-family: "League Spartan", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    transition: opacity 0.3s ease;
+    height: 85px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4px;
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.nav-link:hover::after{
+    transform: scaleX(1);
+}
+
+.mercury::after{
+    background: #419EBB;
+}
+
+.venus::after{
+    background: #EDA249;
+}
+
+.earth::after{
+    background: #6D2ED5;
+}
+
+.mars::after{
+    background: #D14C32;
+}
+
+.jupiter::after{
+    background: #D83A34;
+}
+
+.saturn::after{
+    background: #CD5120;
+}
+
+.uranus::after{
+    background: #1EC2A4;
+}
+
+.neptune::after{
+    background: #2D68F0;
+}
+
+.hamburger-btn{
+    display: none;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.planet-dot{
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .site-header{
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .navbar{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+
+    .nav-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 28px;
+    }
+
+    .nav-link{
+        height: auto;
+        padding-bottom: 12px;
+    }
+
+    .nav-link::after{
+        top: auto;
+        bottom: -20px;
+        height: 4px;
+    }
+}
+
+@media (max-width: 768px){
+    .site-header{
+        position: relative;
+        z-index: 20;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .hamburger-btn{
+        display: block;
+    }
+
+    .nav-list.open{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - 85px);
+        background-color: #070724;
+        padding: 0 5%;
+        gap: 0;
+        align-items: stretch;
+        overflow-y: auto;
+        z-index: 15;
+    }
+
+    .nav-list.open li{
+        width: 100%;
+        list-style: none;
+    }
+
+    .nav-link{
+        height: auto;
+        width: 100%;
+        padding: 18px 0;
+        gap: 14px;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        font-size: 15px;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+
+    .nav-link::after{
+        display: none;
+    }
+
+    .planet-dot{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .planet-label{
+        flex: 1;
+    }
+
+    .mercury .planet-dot{
+        background: #419EBB;
+    }
+
+    .venus .planet-dot{
+        background: #EDA249;
+    }
+
+    .earth .planet-dot{
+        background: #6D2ED5;
+    }
+
+    .mars .planet-dot{
+        background: #D14C32;
+    }
+
+    .jupiter .planet-dot{
+        background: #D83A34;
+    }
+
+    .saturn .planet-dot{
+        background: #CD5120;
+    }
+
+    .uranus .planet-dot{
+        background: #1EC2A4;
+    }
+
+    .neptune .planet-dot{
+        background: #2D68F0;
+    }
+}
